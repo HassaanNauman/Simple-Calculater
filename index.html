@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="calculator">
+            <div class="calc-header">
+                <div>
+                    <button><i class="fa-solid fa-bars"></i></button>
+                    <button><i class="fa-solid fa-clock-rotate-left"></i> </button>
+                </div>
+            </div>
+            <input type="text" readonly class="calc-inp" id="inp">
+            <div class="button-grid">
+                <button onclick="calculator('%')">%</button>
+                <button onclick="calculator('C')">C</button>
+                <button onclick="calculator('/')">&divide;</button>
+                <button onclick="calculator('DEL')">⌫</button>
+                <button onclick="calculator(7)">7</button>
+                <button onclick="calculator(8)">8</button>
+                <button onclick="calculator(9)">9</button>
+                <button onclick="calculator('*')">&times;</button>
+                <button onclick="calculator(4)">4</button>
+                <button onclick="calculator(5)">5</button>
+                <button onclick="calculator(6)">6</button>
+                <button onclick="calculator('-')">-</button>
+                <button onclick="calculator(3)">3</button>
+                <button onclick="calculator(2)">2</button>
+                <button onclick="calculator(1)">1</button>
+                <button onclick="calculator('+')">+</button>
+                <button onclick="calculator('+/-')">&plusmn;</button>
+                <button onclick="calculator(0)">0</button>
+                <button onclick="calculator('.')">.</button>
+                <button class="equal-btn" onclick="calculator('=')">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
